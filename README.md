@@ -1,4 +1,4 @@
-# UPSTYLR WEBSITE [https://www.upstylrapp.com/]
+# UPSTYLR WEBSITE
 
 ## Getting Started
 
