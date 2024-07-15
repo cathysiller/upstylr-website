@@ -19,7 +19,7 @@ export default function Home() {
           width={320}
         />
         <h2 className={playfairScript.className}>
-          Your clothing's next chapter
+          Your clothing&apos;s next chapter
         </h2>
         <hr
           style={{
