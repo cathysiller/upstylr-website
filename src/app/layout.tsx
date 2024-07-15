@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        // If favicon path is public/images/
         <link rel="icon" sizes="16x16" href="/images/favicon.ico" />{" "}
       </Head>
       <body className={inter.className}>{children}</body>
