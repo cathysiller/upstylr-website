@@ -15,17 +15,22 @@ export default function Home() {
           className={styles.logo}
           height={300}
           priority
-          src="/logo.png"
+          src="/logo-light-version.png"
           width={320}
         />
-        <h2 className={playfairScript.className}>
+        <h2
+          className={playfairScript.className}
+          style={{
+            color: "#224C4B",
+          }}
+        >
           Your clothing&apos;s next chapter
         </h2>
         <hr
           style={{
             borderColor: "#BF6A30",
-            marginTop: 32,
             height: 1,
+            marginTop: 32,
             width: 200,
           }}
         />
@@ -33,7 +38,13 @@ export default function Home() {
 
       <div className={styles.form}>
         <form className="" action="#" method="POST">
-          <label htmlFor="email" className={ralewayScript.className}>
+          <label
+            htmlFor="email"
+            className={ralewayScript.className}
+            style={{
+              color: "#224C4B",
+            }}
+          >
             Get notified when we launch!
           </label>
           <div className={styles.formInput}>
@@ -45,6 +56,13 @@ export default function Home() {
               placeholder="Email address"
               required
               type="email"
+              style={{
+                borderColor: "#F2F2F2",
+                borderRadius: 4,
+                borderStyle: "solid",
+                borderWidth: 1,
+                outline: "none",
+              }}
             />
             <button className={styles.formButton}>Subscribe</button>
           </div>
