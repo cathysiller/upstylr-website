@@ -57,17 +57,17 @@ function Newsletter() {
           />
           <button className={styles.formButton}>Subscribe</button>
         </div>
-        <div
-          className={ralewayScript.className}
-          style={{
-            color: "#224C4B",
-            fontWeight: 500,
-            marginTop: 36,
-          }}
-        >
-          {message && message}
-        </div>
       </form>
+      <div
+        className={ralewayScript.className}
+        style={{
+          color: "#224C4B",
+          fontWeight: 500,
+          marginTop: 36,
+        }}
+      >
+        {message}
+      </div>
     </div>
   );
 }

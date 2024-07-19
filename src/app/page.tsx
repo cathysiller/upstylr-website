@@ -40,9 +40,7 @@ export default function Home() {
         />
       </div>
 
-      <div className={styles.form}>
-        <Newsletter />
-      </div>
+      <Newsletter />
     </main>
   );
 }
