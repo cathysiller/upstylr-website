@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.49.0",
+    "axios": "^1.7.2",
+    "isomorphic-unfetch": "^4.0.2",
     "next": "14.2.4",
     "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.49.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

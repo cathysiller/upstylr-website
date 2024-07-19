@@ -1,7 +1,11 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Playfair_Display } from "next/font/google";
 import { Raleway } from "next/font/google";
+import Newsletter from "../components/newsletter/newsletter";
 
 const playfairScript = Playfair_Display({ subsets: ["latin"] });
 const ralewayScript = Raleway({ subsets: ["latin"] });
@@ -37,36 +41,7 @@ export default function Home() {
       </div>
 
       <div className={styles.form}>
-        <form className="" action="#" method="POST">
-          <label
-            htmlFor="email"
-            className={ralewayScript.className}
-            style={{
-              color: "#224C4B",
-            }}
-          >
-            Get notified when we launch!
-          </label>
-          <div className={styles.formInput}>
-            <input
-              autoComplete="email"
-              className=""
-              id="email"
-              name="email"
-              placeholder="Email address"
-              required
-              type="email"
-              style={{
-                borderColor: "#F2F2F2",
-                borderRadius: 4,
-                borderStyle: "solid",
-                borderWidth: 1,
-                outline: "none",
-              }}
-            />
-            <button className={styles.formButton}>Subscribe</button>
-          </div>
-        </form>
+        <Newsletter />
       </div>
     </main>
   );
