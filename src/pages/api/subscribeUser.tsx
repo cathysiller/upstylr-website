@@ -2,15 +2,12 @@ import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod";
 
-// Define response data type
 type Data = { message?: string; error?: string };
 
-// Email validation schema
 const EmailSchema = z
   .string()
   .email({ message: "Please enter a valid email address" });
 
-// Subscription handler function
 const subscribeHandler = async (
   req: NextApiRequest,
   res: NextApiResponse<Data>
@@ -63,14 +60,14 @@ const subscribeHandler = async (
 
       if (error.response?.data.title == "Member Exists") {
         return res.status(400).json({
-          error: "Uh oh, it looks like this email's already subscribed🧐",
+          error: "Oh yay, it looks like this email's already subscribed 🔥",
         });
       }
     }
 
     return res.status(500).json({
       error:
-        "Oops! There was an error subscribing you to the newsletter. Please email me at ogbonnakell@gmail.com and I'll add you to the list.",
+        "Oops! There was an error subscribing you to the newsletter. Please email us at hello@upstylr.com and we will add you to the list.",
     });
   }
 };

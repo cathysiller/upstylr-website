@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Playfair_Display } from "next/font/google";
 import { Raleway } from "next/font/google";
-import Newsletter from "../../components/Newsletter/Newsletter";
+import Newsletter from "../components/newsletter/newsletter";
 
 const playfairScript = Playfair_Display({ subsets: ["latin"] });
 const ralewayScript = Raleway({ subsets: ["latin"] });
